@@ -30,19 +30,21 @@ Auditable + tamper‑resistant logging
 
 ```
 Android App
-  │
-  │  TLS 1.3 + Certificate Pinning
-  ▼
-API Gateway (Rate limit, WAF, IP rules)
-  │
-  ▼
+  ↓ TLS 1.3
+Cloudflare Edge
+  ├── API Shield
+  ├── WAF
+  ├── Rate Limiting
+  ├── Bot Detection
+  ↓
+Cloudflare Worker (Auth + Validation)
+  ↓
 Auth Service (OAuth2 / OpenID / JWT + mTLS)
-  │
-  ▼
+  ↓
 Core API (Express + TypeScript)
   │
-  ├── Encrypted Storage Layer
-  ├── Audit Logging
+  ├── Encrypted Storage Layer (D1)
+  ├── Audit Logging (R2)
   ├── Threat Detection
   └── Monitoring / SIEM
 ```
