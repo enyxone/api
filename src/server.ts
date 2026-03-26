@@ -1,8 +1,7 @@
+
 import app from "./app";
 
 const PORT = process.env.PORT || 8080;
-
 app.listen(PORT, () => {
-  console.info(`Secure API listening on port ${PORT}`);
+  console.log(`API running on ${PORT}`);
 });
-``
