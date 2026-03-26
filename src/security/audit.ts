@@ -1,13 +1,12 @@
-// security/audit.ts
 import { Request, Response, NextFunction } from "express";
-import logger from "../logging/logger";
 
-export function auditLogger(req: Request, _: Response, next: NextFunction) {
-  logger.info({
+export default function audit(req: Request, _res: Response, next: NextFunction) {
+  console.log(JSON.stringify({
+    type: "access",
     path: req.path,
     method: req.method,
     ip: req.ip,
-    user: req.user?.id
-  });
+    time: new Date().toISOString()
+  }));
   next();
 }
