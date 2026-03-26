@@ -65,11 +65,12 @@ winston + pino (structured logs)
 
 Infrastructure Security
 
-API Gateway (Cloudflare / AWS API Gateway)
-WAF
-HSM or Cloud KMS
-Secrets Manager
-SIEM (Azure Sentinel / Splunk)
+Cloudflare Zero Trust A.9 (Access Control)
+Cloudflare KMS / Secrets A.10 (Cryptography)
+TLS / Certificates A.13 (Network Security)
+Cloudflare WAF A.13.1 Workers + API Gateway A.14 (Secure Dev)
+Logpush → SIEM A.12.4 (Logging)
+R2 / D1 A.8 (Asset Mgmt)
 
 
 3. ISO 27001 Compliance Mapping
