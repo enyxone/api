@@ -1,25 +1,4 @@
-```
-server/
-├── src/
-│   ├── app.ts
-│   ├── server.ts
-│   ├── routes/
-│   │   └── users.route.ts
-│   ├── controllers/
-│   │   └── users.controller.ts
-│   ├── middleware/
-│   │   ├── auth.middleware.ts
-│   │   └── error.middleware.ts
-│   ├── db/
-│   │   └── index.ts
-│   └── config.ts
-├── dist/
-├── tsconfig.json
-├── package.json
-├── .env
-```
-
-1. High‑Level Security Architecture
+## 1. Security Architecture
 Core Security Principles
 
 Zero Trust API
@@ -49,8 +28,7 @@ Core API (Express + TypeScript)
   └── Monitoring / SIEM
 ```
 
-2. Technology Stack (Security‑Focused)
-Backend
+## 2. Technology Stack (Security‑Focused)
 
 - Node.js 20+ 
 - Express 
@@ -65,7 +43,7 @@ Backend
 - zod (strong input validation) 
 - winston + pino (structured logs) 
 
-Infrastructure Security
+## 3. Infrastructure Security
 
 - Cloudflare Zero Trust A.9 (Access Control) 
 - Cloudflare KMS / Secrets A.10 (Cryptography) 
