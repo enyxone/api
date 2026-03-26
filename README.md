@@ -75,10 +75,10 @@ Infrastructure Security
 - R2 / D1 A.8 (Asset Mgmt) 
 
 
-ISO Control Implementation A.9 
-Access ControlRBAC + OAuth2 A.10 
-Cryptography AES‑256, RSA‑4096 A.12 
-Logging Immutable audit logs A.13 
-Network Security TLS 1.3 + WAF A.14 
-Secure DevSAST / dependency audit A.18 
-Privacy Data minimization + consent
+- ISO Control Implementation A.9 
+- Access ControlRBAC + OAuth2 A.10 
+- Cryptography AES‑256, RSA‑4096 A.12 
+- Logging Immutable audit logs A.13 
+- Network Security TLS 1.3 + WAF A.14 
+- Secure DevSAST / dependency audit A.18 
+- Privacy Data minimization + consent 
